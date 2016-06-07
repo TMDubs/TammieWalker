@@ -1,0 +1,92 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #F9F9F9;
+}
+
+.boxContainer {
+  width: 75%;
+  height: 100%;
+  margin: 50px auto;
+  display: block;
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 40px;
+}
+
+.box {
+  height: 150px;
+  width: 200px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+
+  webkit-animation: slider 15s infinite;
+  -moz-animation: slider 15s infinite;
+  -ms-animation: slider 15s infinite;
+  -o-animation: slider 15s infinite;
+  animation: slider 15s infinite;
+ 
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+
+.hiddenBox {
+  height: 100%;
+  width: 200px;
+  background: transparent;
+  color: transparent;
+  overflow: hidden;
+ 
+  webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  -moz-transition: color 0.5s ease, background-color 0.5s ease;
+  -o-transition: color 0.5s ease, background-color 0.5s ease;
+  -ms-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+
+
+.hiddenBox h2 {
+  font-family: lato;
+  font-size: 20px;
+  margin: 10px auto 10px auto;
+  text-align: center;
+
+  webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  -moz-transition: color 0.5s ease, background-color 0.5s ease;
+  -o-transition: color 0.5s ease, background-color 0.5s ease;
+  -ms-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+ 
+.hiddenBox p {
+  font-family: lato;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 15px 5px 15px;
+
+  webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  -moz-transition: color 0.5s ease, background-color 0.5s ease;
+  -o-transition: color 0.5s ease, background-color 0.5s ease;
+  -ms-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.hiddenBox:hover {
+  background: #000; /*for old browsers */
+  background: rgba(61,61,61,0.8);
+  color: #fff;
+}
